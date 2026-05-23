@@ -1,47 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bankcss</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="stylesheet" href="/image/download.jpg ">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <style>
-    body {
-      font-family: 'Edu AU VIC WA NT Guides', cursive;
-    }
-  </style>
-  <style>
-    h1, h2, h3, h4, h5, h6 {
-      font-family: 'Playwrite GB J Guides', cursive;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Practice Webpage</title>
+  <link rel="stylesheet" href="/css/style.css" />
 </head>
 <body>
-  <h1 style = "color: #04aa6d;"> Heading 1 </h1>
-  <p> This is a paragraph. </p>
-  <h2 style = "font-size: 20px;"> Heading 2 </h2>
-  <p> This is another paragraph. </p>
-    <h3> Heading 3 </h3>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam repellendus similique nobis magnam nulla ipsam vero nihil reprehenderit nesciunt fuga hic facilis, corrupti, consequuntur debitis explicabo quidem facere eos suscipit.</p>
-  <h4> Heading 4 </h4>
 
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui vitae ducimus voluptate nihil aperiam, earum repellendus consequuntur dicta, perspiciatis sapiente, nostrum quaerat amet voluptas eos porro? Esse voluptatum exercitationem repellat.
-  Dolore at in eum cupiditate sequi odit accusamus, veniam possimus, voluptas dolor officia non eaque quaerat recusandae numquam autem! Tenetur voluptatibus numquam nobis magni eligendi vel ipsa libero doloribus autem!
-  Iure quae aut explicabo, maiores cumque itaque voluptates animi sint inventore laudantium dolor quaerat sapiente possimus tempora nihil aperiam nulla eum quia odio, quos alias? Tenetur distinctio cum esse dolores.
-  Provident in culpa incidunt? Asperiores voluptatum nesciunt inventore placeat nihil sint quod iste id, quo quam corporis dignissimos recusandae similique fuga libero excepturi sunt molestias autem quidem voluptate amet? Ipsa?</p>
-  <h5> Heading 5 </h5>
-  <a href="#image/" target="_blank">Amazon</a>
-  <h6 > Heading 6 </h6>
-  <img src="/image/download.jpg" alt="Image" width="100px" id="image" class="heading">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo blanditiis dolorem qui? Dolorum officiis distinctio quae maiores nihil eveniet error repellendus, ullam earum magni obcaecati ex voluptate nam impedit illum.
-  Nemo ad odio nisi architecto eius incidunt voluptatum perferendis ab. Omnis explicabo, vero officiis aliquid pariatur mollitia! Velit deleniti quia ea, mollitia iusto fugit corrupti in? Suscipit mollitia asperiores rem.
-  Incidunt officiis sint, obcaecati consequatur a sit necessitatibus unde blanditiis! Nisi quas, corporis delectus aut doloribus, ut repellendus debitis ipsam, placeat voluptate tempore aperiam cupiditate nihil commodi vero esse aliquam.
-  Architecto sint veritatis quae iusto! Aspernatur nulla nisi quo illo pariatur est ea. Veniam harum, magni ipsum omnis perspiciatis libero velit quaerat provident nihil totam alias autem quisquam, nobis voluptate?
-  Modi tempore aut eum dolore molestias, laboriosam reprehenderit odit? Magnam laudantium dolore velit quo accusamus odio delectus? Praesentium amet exercitationem eveniet nobis assumenda atque cumque esse laboriosam, id fugiat dignissimos.
-  Neque quasi possimus est incidunt dolorem, vel, accusamus rem, adipisci reiciendis culpa fuga quis non distinctio! Quidem, saepe delectus. Eum minus repellat repudiandae sequi enim ipsum, aperiam nostrum sapiente nulla.
-  Aliquid debitis maiores atque quas, aut libero vel ratione eaque vero nostrum officiis natus nulla tempore consequuntur ex distinctio quasi temporibus nemo laborum officia iste incidunt mollitia voluptatum. Neque, iure.
-  Architecto, ratione consequuntur! Tempora mollitia itaque eum corrupti dolores eaque perspiciatis eligendi impedit ullam velit repellendus expedita quaerat obcaecati adipisci, est, dolorem autem. Ipsa nesciunt voluptates reiciendis illo corporis animi.</p>
+  <header class="site-header">
+    <h1>Student Practice Webpage</h1>
+    <p>HTML + CSS Practice (Forms + Table Advanced)</p>
+  </header>
+
+  <main class="container">
+
+    <!-- IMAGE SECTION : normal rectangle image -->
+    <section class="card">
+      <h2 class="section-title">Image Section</h2>
+      <img src="/image/24701-nature-natural-beauty.jpg" alt="Scenic nature" />
+    </section>
+
+    <!-- IMAGE CIRCLE : same image but shown as a circle -->
+    <section class="card">
+      <h2 class="section-title">Image Circle</h2>
+      <img src="/image/24701-nature-natural-beauty.jpg" alt="Scenic nature circle" class="img-circle" />
+    </section>
+
+    <!-- IMAGE OVAL : same image but shown as an oval -->
+    <section class="card">
+      <h2 class="section-title">Image Oval</h2>
+      <img src="/image/24701-nature-natural-beauty.jpg" alt="Scenic nature oval" class="img-oval" />
+    </section>
+
+    <!-- ADVANCED TABLE : table with rowspan and colspan -->
+    <section class="card">
+      <h2 class="section-title">Advanced Table</h2>
+      <table border="1" cellpadding="10" cellspacing="0">
+        <thead>
+          <tr>
+            <th rowspan="2">Name</th>
+            <th colspan="2">Scores</th>
+            <th rowspan="2">Grade</th>
+          </tr>
+          <tr>
+            <th>Math</th>
+            <th>CS</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Alice</td>
+            <td>90</td>
+            <td>95</td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>Bob</td>
+            <td>80</td>
+            <td>85</td>
+            <td>B</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- FORM 1 : Basic Info form -->
+    <section class="card">
+      <h2 class="form-title">Form 1: Basic Info</h2>
+
+      <!-- form-inner keeps the fields centered inside the white card -->
+      <div class="form-inner">
+
+        <div class="form-group">
+          <label for="name">Name <span class="required">*</span></label>
+          <input type="text" id="name" name="name" />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email <span class="required">*</span></label>
+          <input type="email" id="email" name="email" />
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password <span class="required">*</span></label>
+          <input type="password" id="password" name="password" />
+        </div>
+
+        <div class="form-group">
+          <label for="file">Upload File</label>
+          <input type="file" id="file" name="file" class="file-input" />
+        </div>
+
+        <div class="btn-row">
+          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="reset"  class="btn btn-secondary">Reset</button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FORM 2 : Survey Form -->
+    <section class="card">
+      <h2 class="form-title">Form 2: Survey Form</h2>
+
+      <!-- form-inner keeps the fields centered inside the white card -->
+      <div class="form-inner">
+
+        <div class="form-group">
+          <label for="course">Choose Course <span class="required">*</span></label>
+          <select id="course" name="course">
+            <option value="">-- Select --</option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascript">JavaScript</option>
+            <option value="python">Python</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Gender</label>
+          <div class="radio-group">
+            <label class="inline-label">
+              <input type="radio" name="gender" value="male" /> Male
+            </label>
+            <label class="inline-label">
+              <input type="radio" name="gender" value="female" /> Female
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Skills</label>
+          <div class="checkbox-group">
+            <label class="inline-label"><input type="checkbox" name="skills" value="html" /> HTML</label>
+            <label class="inline-label"><input type="checkbox" name="skills" value="css"  /> CSS</label>
+            <label class="inline-label"><input type="checkbox" name="skills" value="javascript"   /> JavaScript</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone <span class="required">*</span></label>
+          <input type="tel" id="phone" name="phone" />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4"></textarea>
+        </div>
+
+        <div class="btn-row">
+          <button type="submit" class="btn btn-primary">Send</button>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
 </body>
 </html>
