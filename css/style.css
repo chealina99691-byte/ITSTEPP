@@ -1,0 +1,253 @@
+/* ── 1. RESET & BASE ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 2px;
+  padding: 2px;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  background-color: #dce3ec;
+  color: #333;
+}
+
+/* ── 2. HEADER ── */
+.site-header {
+  background-color: #4a8fd4;
+  color: #ffffff;
+  text-align: center;
+  padding: 22px 16px 18px;
+  border-radius: 0 0 12px 12px;
+}
+
+.site-header h1 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  letter-spacing: 0.3px;
+}
+
+.site-header p {
+  font-size: 12px;
+  opacity: 0.88;
+}
+
+/* ── 3. MAIN CONTAINER ── */
+.container {
+  max-width: 10000px;
+  margin: 22px auto;
+  padding: 0px 16px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* ── 4. CARD ── */
+.card {
+  background-color: #ffffff;
+  border-radius: 6px;
+  padding: 20px 24px 24px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.10);
+}
+
+/* ── 5. SECTION TITLE ── */
+.section-title {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 14px;
+  color: #222;
+}
+
+/* ── 6. IMAGE ── */
+.card img {
+  display: block;
+  width: 200px;
+  height: 145px;
+  object-fit: cover;
+  border-radius: 3px;
+}
+
+/* ── 7. TABLE ── */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+table, th, td {
+  border: 1px solid #c8d4e0;
+}
+
+thead th {
+  background-color: #4a8fd4;
+  color: #ffffff;
+  text-align: center;
+  padding: 9px 14px;
+  font-weight: 600;
+}
+
+tbody td {
+  text-align: center;
+  padding: 8px 14px;
+  background-color: #ffffff;
+}
+
+tbody tr:nth-child(odd) td {
+  background-color: #f4f7fb;
+}
+
+/* ── 8. FORM CARD ── */
+.form-card {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+/* ── 9. FORM TITLE ── */
+.form-title {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 18px;
+  color: #222;
+  text-align: center;
+}
+
+/* ── 10. FORM GROUPS ── */
+.form-group {
+  margin-bottom: 13px;
+}
+
+.form-group > label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #333;
+}
+
+.required {
+  color: #d9534f;
+}
+
+/* ── 11. INPUTS, SELECT, TEXTAREA ── */
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group input[type="tel"],
+.form-group select,
+.form-group textarea {
+  display: block;
+  width: 100%;
+  padding: 6px 8px;
+  border: 1px solid #bfc9d3;
+  border-radius: 4px;
+  font-size: 13px;
+  font-family: inherit;
+  color: #333;
+  background-color: #ffffff;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #4a8fd4;
+  box-shadow: 0 0 0 2px rgba(74, 143, 212, 0.18);
+}
+
+/* ── 12. FILE INPUT ── */
+.file-input {
+  display: block;
+  width: 100%;
+  padding: 5px 8px;
+  border: 1px solid #bfc9d3;
+  border-radius: 4px;
+  background-color: #fafafa;
+  font-size: 13px;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+/* ── 13. TEXTAREA ── */
+.form-group textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+/* ── 14. RADIO & CHECKBOX GROUPS ── */
+.radio-group,
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 3px;
+}
+
+.inline-label {
+  display: flex !important;
+  align-items: center;
+  gap: 5px;
+  font-weight: 400 !important;
+  font-size: 13px;
+  cursor: pointer;
+  margin-bottom: 0 !important;
+}
+
+.inline-label input {
+  width: auto;
+  margin: 0;
+}
+
+/* ── 15. BUTTONS ── */
+.btn-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.btn {
+  padding: 7px 22px;
+  border: none;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background-color 0.15s, transform 0.1s;
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+.btn-primary {
+  background-color: #4a8fd4;
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background-color: #3a7dc0;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: #ffffff;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6370;
+}
+
+/* ── 16. RESPONSIVE ── */
+@media (max-width: 600px) {
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+  .form-card {
+    padding: 16px;
+  }
+}
